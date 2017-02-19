@@ -12,6 +12,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var tableView: UITableView!
     var businesses: [Business]!
+    var isMoreDataLoading = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,36 +22,47 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        let searchBar = UISearchBar()
+        searchBar.sizeToFit()
+        navigationItem.titleView = searchBar
        
-        print("_____________\(tableView.rowHeight)")
-        
+        /*
         Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
-            
             self.tableView.reloadData()
             
             if let businesses = businesses {
                 for business in businesses {
-                    print(business.name!)
-                    print(business.address!)
+                    //print(business.name!)
+                    //print(business.longitude!)
+                    //print(business.latitude!)
+                    
                 }
             }
             
             }
         )
+ */
+ 
         
-        /* Example of Yelp search with more search options specified
-         Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-         self.businesses = businesses
+        //Example of Yelp search with more search options specified
+         Business.searchWithTerm(term: "Asian", completion: { (businesses: [Business]?, error: Error?) -> Void in
+            self.businesses = businesses
+            self.tableView.reloadData()
          
-         for business in businesses {
-         print(business.name!)
-         print(business.address!)
+            if let businesses = businesses {
+                for business in businesses {
+                    print(business.name!)
+                    //print(business.longitude!)
+                    //print(business.latitude!)
+                    
+                }
+            }
+            
          }
-         }
-         */
-        
+        )
+ 
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,14 +84,19 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         cell.business = businesses[indexPath.row]
         return cell
     }
+    
     /*
      // MARK: - Navigation
-     
+   
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let business = Business
+        let mapViewcontroller = segue.destination as! MapViewController
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
-     */
+ */
+ 
+    
     
 }

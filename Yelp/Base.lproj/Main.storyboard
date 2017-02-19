@@ -13,7 +13,7 @@
         <!--Yelp-->
         <scene sceneID="5L9-Uz-lNK">
             <objects>
-                <viewController id="2xI-yr-O5N" customClass="BusinessesViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Yelp" id="2xI-yr-O5N" customClass="BusinessesViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xm3-hV-uct"/>
                         <viewControllerLayoutGuide type="bottom" id="Kur-We-vFb"/>
@@ -30,31 +30,34 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1x6-iz-OeR" id="BNN-w8-ZNC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="129.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J8p-mM-J1R">
-                                                    <rect key="frame" x="8" y="8" width="75" height="75"/>
+                                                    <rect key="frame" x="8" y="10" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="Cb8-kH-FKE"/>
                                                         <constraint firstAttribute="width" constant="75" id="kc9-EX-FKF"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7x-ND-X1V">
-                                                    <rect key="frame" x="91" y="32.666666666666664" width="83" height="15"/>
+                                                    <rect key="frame" x="91" y="35" width="83" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="4bW-yS-PmH"/>
                                                         <constraint firstAttribute="height" constant="15" id="aoS-K1-Ej2"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faith Vietnamese" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-0u-ab0">
-                                                    <rect key="frame" x="91" y="7.9999999999999982" width="142" height="20.333333333333329"/>
+                                                    <rect key="frame" x="91" y="10" width="230" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="230" id="lWp-Hv-Oek"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="808 W University Ave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-nw-sDd">
-                                                    <rect key="frame" x="91" y="51.666666666666671" width="131" height="16.000000000000014"/>
+                                                    <rect key="frame" x="91" y="54" width="131" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="sWo-Eu-KDU"/>
                                                     </constraints>
@@ -81,7 +84,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnameses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCB-Io-L50">
-                                                    <rect key="frame" x="90" y="70.333333333333329" width="78" height="16"/>
+                                                    <rect key="frame" x="90" y="72" width="78" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="5De-mE-whu"/>
                                                     </constraints>
@@ -93,21 +96,19 @@
                                             <constraints>
                                                 <constraint firstItem="zMO-0u-ab0" firstAttribute="leading" secondItem="J8p-mM-J1R" secondAttribute="trailing" constant="8" id="4Q7-TW-SVD"/>
                                                 <constraint firstItem="lKm-9k-VOg" firstAttribute="top" secondItem="BNN-w8-ZNC" secondAttribute="top" constant="8" id="Aje-Lz-b1w"/>
-                                                <constraint firstItem="lKm-9k-VOg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zMO-0u-ab0" secondAttribute="trailing" constant="8" id="FfP-BG-5zP"/>
                                                 <constraint firstAttribute="trailing" secondItem="LWK-8c-cnz" secondAttribute="trailing" constant="8" id="Jae-Fl-Sv0"/>
                                                 <constraint firstItem="J8p-mM-J1R" firstAttribute="leading" secondItem="BNN-w8-ZNC" secondAttribute="leading" constant="8" id="KI4-Re-dFw"/>
                                                 <constraint firstAttribute="trailing" secondItem="lKm-9k-VOg" secondAttribute="trailing" constant="8" id="MBx-lX-gi5"/>
-                                                <constraint firstItem="n7x-ND-X1V" firstAttribute="top" secondItem="zMO-0u-ab0" secondAttribute="bottom" constant="4" id="Mn5-RQ-nR9"/>
                                                 <constraint firstItem="3zs-nw-sDd" firstAttribute="top" secondItem="n7x-ND-X1V" secondAttribute="bottom" constant="4" id="Rp1-et-7Kv"/>
                                                 <constraint firstItem="LWK-8c-cnz" firstAttribute="top" secondItem="lKm-9k-VOg" secondAttribute="bottom" constant="4" id="Rtk-VS-czt"/>
                                                 <constraint firstItem="cCB-Io-L50" firstAttribute="top" secondItem="3zs-nw-sDd" secondAttribute="bottom" constant="2" id="TSY-t2-Prs"/>
                                                 <constraint firstItem="3zs-nw-sDd" firstAttribute="leading" secondItem="J8p-mM-J1R" secondAttribute="trailing" constant="8" id="VSa-Fy-po9"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cCB-Io-L50" secondAttribute="bottom" constant="15" id="ZIg-Tn-Ytg"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cCB-Io-L50" secondAttribute="bottom" constant="10" id="ZIg-Tn-Ytg"/>
                                                 <constraint firstItem="n7x-ND-X1V" firstAttribute="leading" secondItem="J8p-mM-J1R" secondAttribute="trailing" constant="8" id="cVU-iM-cVo"/>
                                                 <constraint firstItem="n7x-ND-X1V" firstAttribute="top" secondItem="zMO-0u-ab0" secondAttribute="bottom" constant="4" id="ja7-He-9Bb"/>
-                                                <constraint firstItem="zMO-0u-ab0" firstAttribute="top" secondItem="BNN-w8-ZNC" secondAttribute="top" constant="8" id="l7v-ud-u1n"/>
+                                                <constraint firstItem="zMO-0u-ab0" firstAttribute="top" secondItem="BNN-w8-ZNC" secondAttribute="top" constant="10" id="l7v-ud-u1n"/>
                                                 <constraint firstItem="cCB-Io-L50" firstAttribute="leading" secondItem="BNN-w8-ZNC" secondAttribute="leadingMargin" constant="82" id="oAX-0h-ms4"/>
-                                                <constraint firstItem="J8p-mM-J1R" firstAttribute="top" secondItem="BNN-w8-ZNC" secondAttribute="top" constant="8" id="v6u-I0-dzM"/>
+                                                <constraint firstItem="J8p-mM-J1R" firstAttribute="top" secondItem="BNN-w8-ZNC" secondAttribute="top" constant="10" id="v6u-I0-dzM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -124,6 +125,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="EDA-ga-NhO" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="3Xg-Iz-gC6"/>
                             <constraint firstItem="EDA-ga-NhO" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="44c-80-mdU"/>
@@ -133,7 +135,13 @@
                             <constraint firstItem="EDA-ga-NhO" firstAttribute="centerY" secondItem="XhR-oz-92f" secondAttribute="centerY" id="mNZ-ue-chD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Yelp" id="6ig-Qc-HsY"/>
+                    <navigationItem key="navigationItem" title="Yelp" id="6ig-Qc-HsY">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="AZ4-vf-rIU">
+                            <connections>
+                                <segue destination="i8f-Rg-ATU" kind="presentation" modalTransitionStyle="crossDissolve" id="Axb-vZ-QAq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="EDA-ga-NhO" id="J5L-HI-0Bm"/>
                     </connections>
@@ -141,6 +149,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3253.6231884057975" y="362.77173913043481"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="VFh-8w-eQX">
+            <objects>
+                <viewController id="i8f-Rg-ATU" customClass="MapViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a9D-AW-X2x"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQ4-Kh-GlN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Qq-L5-ThN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-13-j5y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-lW-z0g">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Back" id="EpJ-hl-Aey">
+                                        <connections>
+                                            <segue destination="Cwv-T8-6vh" kind="presentation" modalTransitionStyle="crossDissolve" id="Rb8-dp-dDL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="166" style="plain" systemItem="fixedSpace" id="azu-Ml-4f1"/>
+                                    <barButtonItem title="Current Location" id="jIX-lk-O3u">
+                                        <connections>
+                                            <action selector="onCurrentLocationButton:" destination="i8f-Rg-ATU" id="TxN-Xa-vJZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="U7y-13-j5y" id="DWV-OT-V7k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Oy-UE-h2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4157.971014492754" y="362.77173913043481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gVn-Co-d4m">
